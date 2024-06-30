@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Digital Signature.</title>
+    <link rel="shortcut icon" href="https://tse3.mm.bing.net/th?id=OIP.Dkp9LHIny0embc11vquyjQHaFf&pid=Api&P=0&h=180" type="image/x-icon">
+</head>
+<body>
+
+    <section class="w-full h-screen px-20">
+        <header >
+            <nav class="w-full border-b-2 border-black">
+                <h1 class="shadow-lg text-3xl font-extrabold font-serif py-8 text-center">Digital Signature</h1>
+            </nav>
+        </header>
+        <main class="flex gap-x-20 mt-10">
+            <div class="left w-1/3 ">
+                <h1 class="text-6xl font-bold font-serif drop-shadow-xl">Create Your Digital Signature in Seconds.</h1>
+                <div class="flex gap-5 text-lg font-semibold mt-12">
+                    <div class="black">
+                        <p>Text color picker.</p>
+                        <input type="color" class="form-control w-28"  id="colorPicker">
+                    </div>
+                    <div class="black">
+                        <p>Background color.</p>
+                        <input type="color" class="form-control w-28"  id="canvasColor">
+                    </div>
+                    <div class="black">
+                        <p>Font Size.</p>
+                        <select class="custom-select w-28 outline-none" type="select" id="fontSizePicker">
+                            <option value="5">5px</option>
+                            <option value="10">10px</option>
+                            <option value="20">20px</option>
+                            <option value="30">30px</option>
+                            <option value="40">40px</option>
+                            <option value="50">50px</option>
+                        </select>
+                    </div>
+                </div>
+                <p class="text-white bg-purple-500 px-32 py-4 rounded-lg font-bold text-xl mt-5 hover:bg-purple-600 hover:border-2 border-blue-500">Download Signature</p>
+            </div>
+            <div class="right">
+                <canvas class="canvas border-[1px] border-slate-300 rounded-lg shadow-xl" id="myCanvas" width="800" height="400">
+
+                </canvas>
+                <div class="bottom mt-5 text-white font-bold text-xl ">
+                    <button type="button" class="btn bg-red-500 hover:bg-red-600 px-16 py-2 rounded-lg" id="clearButton">Clear</button>
+                    <button type="button" class="btn bg-green-500 hover:bg-green-600 py-2 px-14 rounded-lg" id="saveButton">Save & Download</button>
+                    <button type="button" class="btn bg-blue-500 hover:bg-blue-600 py-2 px-14 rounded-lg" id="retrieveButton">Retrive Saved Signature</button>
+                </div>
+            </div>
+        </main>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
